@@ -1,0 +1,159 @@
+.spinIt {
+  animation: spin 3s infinite ease-in;
+}
+.anim--spin {
+  animation: spin 3s infinite ease-in;
+}
+.anim--grow {
+  animation: showFromFooter 0.4s ease-in-out forwards;
+}
+.anim--gone {
+  animation: goneToTop 0.3s ease-in-out forwards;
+}
+.anim--progress {
+  animation: progress-bar-stripes 0.5s linear infinite;
+}
+.anim--hurricane {
+  animation: blot-small-to-large 1.5s ease-in-out forwards;
+}
+.anim--shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes inWaves {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+@keyframes inWates {
+  0% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  82% {
+    transform: rotate(-5deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  87% {
+    transform: rotate(-5deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  92% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hue-rotate {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes showFromFooter {
+  0% {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes goneToTop {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes btn-fill {
+  0% {
+    background-position: 0 -50px;
+  }
+  100% {
+    background-position: 0 -200px;
+  }
+}
+
+@keyframes blot-small-to-large {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fromZero {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 10px #000;
+  }
+  30% {
+    text-shadow: 0 0 7px #000;
+  }
+  50% {
+    opacity: 0;
+    text-shadow: 0 0 8px #000;
+  }
+  70% {
+    opacity: 0.4;
+    text-shadow: 0 0 5px #000;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 #000;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg)
+  }
+  85% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

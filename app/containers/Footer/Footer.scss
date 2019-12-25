@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  margin: auto auto 0;
+  padding: 0 15px 30px;
+
+  &__row {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+  }
+
+  &__copyrights {
+    color: var(--c-gamma-text);
+    text-align: right;
+  }
+
+  .footer__link {
+    text-decoration: none;
+    color: #a4ac81;
+  }
+}

@@ -1,0 +1,130 @@
+@import "../../assets/scss/animations.scss";
+
+.generator {
+  background-size: 100%;
+  padding-top:40px;
+  color: #ffffff;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__left {
+    padding-right: 30px;
+  }
+
+  &__right {
+    max-width: 360px;
+    width: 100%;
+    padding: 0 0 0 40px;
+    margin-left: auto;
+    flex: 0 0 auto;
+  }
+
+  &__title {
+    font-size: 38px;
+    margin: 0 0 40px;
+    color: #E1E1E1;
+    text-align: center;
+
+    &_left {
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  &__rukles {
+    height: 2.5em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    line-height: 1.4;
+    font-size: 300%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__action-row {
+    padding: 30px 0 10px;
+    margin-top: 30px;
+    min-height: 200px;
+    text-align: center;
+  }
+
+  &__button {
+    text-align: center;
+    padding: 25px 50px;
+    background-color: #ffa545;
+    border-bottom: 10px solid #ab5800;
+    font-size: 210%;
+    text-decoration: none;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: inherit;
+    // border: 1px solid transparent;
+    animation: inWates 5s infinite cubic-bezier(0.68, 0, 0.24, 1);
+    img {
+      user-select: none;
+    }
+
+    &_disabled {
+      pointer-events: none;
+      background: linear-gradient(#ffa545 50%, #ab5800 0%) repeat-x;
+      background-size: 100% 300%;
+      animation: btn-fill 1s ease-in-out forwards;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1)
+    }
+    &:hover {
+      padding: 26px 50px 26px;
+      border-bottom: 8px solid #ab5800;
+    }
+
+    &:active,
+    &.touched {
+      padding: 28px 50px 29px;
+      border-bottom: 3px solid #ab5800;
+      transition: all 0.2s;
+    }
+  }
+
+  &__result-item {
+    margin: 10px auto;
+  }
+
+  &__fire {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding: 14px 45px 18px;
+    background-color: #FFA545;
+    border-radius: 10px;
+    border: none;
+    color: #f1f1f1;
+    width: 100%;
+    display: block;
+    margin: 45px auto 0;
+    max-width: 320px;
+    font-size: 24px;
+    box-shadow: inset 0 -8px 0 #D37C1E;
+    transition: box-shadow 0.2s ease, padding 0.1s linear;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      padding: 15px 45px 17px;
+      box-shadow: inset 0 -2px 0 #D37C1E;
+    }
+  }
+}

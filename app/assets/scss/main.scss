@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
+@import "variables";
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Neucha', cursive;
+}
+
+body {
+  margin: 0;
+  background-color: #1F1F1F;
+  background-image: linear-gradient(180deg, #1F1F1F 45.27%, #333627 219.66%);;
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body,
+button,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: inherit;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--c-gamma-bg);
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--c-gamma-bg);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--c-gamma-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--c-alpha-bg) linear-gradient(45deg,
+          rgba(255, 255, 255, .2) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, .2) 50%,
+          rgba(255, 255, 255, .2) 75%,
+          transparent 75%,
+          transparent);
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}

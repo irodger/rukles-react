@@ -1,0 +1,20 @@
+/* Colors */
+:root {
+  --c-orange: #ffa545;
+  --c-orange-darker: #d28910;
+  --c-white: #F5F5F5;
+  --c-dark: #343434;
+  --c-alpha-text: var(--c-orange);
+  --c-alpha-common: var(--c-orange);
+  --c-alpha-bg: var(--c-orange);
+  --c-beta-text: var(--c-orange-darker);
+  --c-beta-common: var(--c-orange-darker);
+  --c-beta-bg: var(--c-orange-darker);
+  --c-gamma-text: var(--c-white);
+  --c-gamma-common: var(--c-white);
+  --c-gamma-bg: var(--c-white);
+  --c-delta-text: var(--c-dark);
+  --c-delta-common: var(--c-dark);
+  --c-delta-bg: var(--c-dark);
+  --grid-width: 960px;
+}
