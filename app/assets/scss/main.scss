@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Neucha&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Neucha|Roboto:400,900&display=swap&subset=cyrillic');
 @import "variables";
 
 *,
@@ -9,7 +9,6 @@
 
 html {
   font-size: 16px;
-  font-family: 'Neucha', cursive;
 }
 
 body {
@@ -19,6 +18,7 @@ body {
   background-position: center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
+  font-family: 'Neucha', cursive;
 }
 
 body,
@@ -30,7 +30,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: inherit;
+  font-family: 'Neucha', cursive;
 }
 
 *::-webkit-scrollbar-track {

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "clean": "rimraf public",
+    "clean": "rimraf dist",
     "build": "npm run build:root",
     "build:root": "rm -rf dist && parcel build index.html --public-url '/'",
     "build:folder": "rm -rf dist && parcel build index.html --public-url '.'",
