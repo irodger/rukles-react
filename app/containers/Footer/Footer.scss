@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   margin: auto auto 0;
-  padding: 0 15px 30px;
+  padding: 30px 15px 30px;
 
   &__row {
     max-width: var(--grid-width);
@@ -11,6 +11,10 @@
   &__copyrights {
     color: var(--c-gamma-text);
     text-align: right;
+
+    @media (max-width: 740px) {
+      text-align: center;
+    }
   }
 
   .footer__link {
