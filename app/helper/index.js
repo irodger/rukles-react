@@ -1,8 +1,8 @@
 /**
  * Get array with objects and return array with field name
- * @param array: {Array}
- * @param fieldName: string
- * @returns {Array}
+ * @param array: []
+ * @param fieldName: 'string'
+ * @returns [*]
  */
 export const getArrayByFieldName = (array, fieldName = 'name') => {
   const newArray = [];
@@ -14,25 +14,24 @@ export const getArrayByFieldName = (array, fieldName = 'name') => {
 /**
  * Get random number
  * @param number
- * @returns {number}
+ * @returns number
  */
 export const randomByNum = number => Math.floor(Math.random() * number);
 
 /**
- * Get array and return array by filter
- * @param array
- * @param filter
- * @returns {*}
+ * Get array by filter
+ * @param array: []
+ * @param filter: 'string'
+ * @returns [*]
  */
-export const getFilteredCollection = (array, filter = 'all') => {
-  return array.filter((item) => item.params.includes(filter));
-};
+export const getFilteredCollection = (array, filter = 'all') =>
+  filter === 'all' ? array : array.filter(item => item.params.includes(filter));
 
 /**
  * Getting random item from array
- * @param array
- * @param filter
- * @returns {*}
+ * @param array: []
+ * @param filter: 'string'
+ * @returns {{name, params}}
  */
 export const getRandomItem = (array, filter) => {
   const coll = getFilteredCollection(array, filter);

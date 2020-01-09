@@ -1,3 +1,3 @@
 ### Rukles web app
 
-#Just go and have fun!
+Just a code of my react website http://rukles.ru
