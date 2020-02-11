@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer__copyrights">
           © 2015 - {currYear}
           {" "}
-          <a href="http://irodger.ru" className="footer__link" target="_blank">iRodger</a> v. 1.0.0
+          <a href="http://irodger.ru" className="footer__link" rel="noopener" target="_blank">iRodger</a> v. 1.0.0
         </div>
       </div>
     </footer>
